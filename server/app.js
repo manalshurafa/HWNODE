@@ -8,6 +8,7 @@ app.use(bodyParser.json());
 //write your code 
 app.get('/user',(req,res)=>{
     var send = res.send;
+    req.params({"messege":"hello","name":"Manal"}) ;
     var user_id = req.params('id');
     res.send(req.params);
     res.json({name:"taymaa"});
